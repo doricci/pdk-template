@@ -9,8 +9,8 @@
 <%   configs.deep_merge!(@configs['defaults']) -%>
 <%   configs.deep_merge!(@configs['custom']) -%>
 <% end -%>
-stages:
 <% unless @configs['override'] -%>
+stages:
   - syntax
   - unit
 <% end -%>
